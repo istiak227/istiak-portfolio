@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import NextLink from "next/link";
+import NextLink from 'next/link'
 import { useTheme } from 'next-themes'
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false)
-  const {theme, setTheme} = useTheme()
-  useEffect(() => setMounted(true), []);
-  const {children, ...customMeta} = props
-  const router = useRouter();
+  const { theme, setTheme } = useTheme()
+  useEffect(() => setMounted(true), [])
+  const { children, ...customMeta } = props
+  const router = useRouter()
   const meta = {
     title: 'Istiak Ahmed',
     description: `Istiak Ahmed's personal portfolio website`,
@@ -24,12 +24,15 @@ export default function Container(props) {
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
       </Head>
-      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
+      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 mx-auto bg-white dark:bg-black bg-opacity-60">
+        <a href="#skip" className="sr-only focus:not-sr-only">
+          Skip to content
+        </a>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
           className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           {mounted && (
             <svg
@@ -39,7 +42,7 @@ export default function Container(props) {
               stroke="currentColor"
               className="h-4 w-4 text-gray-800 dark:text-gray-200"
             >
-              {theme === "dark" ? (
+              {theme === 'dark' ? (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -71,11 +74,9 @@ export default function Container(props) {
           </NextLink>
 
           <NextLink href="/lense">
-            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">
-              lense
-            </a>
+            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">lense</a>
           </NextLink>
-         {/*  <NextLink href="/snippets">
+          {/*  <NextLink href="/snippets">
             <a className="p-1 sm:p-4 hidden md:inline text-gray-900 dark:text-gray-100">
               Snippets
             </a>
