@@ -24,7 +24,7 @@ export default function Container(props) {
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
       </Head>
-      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 mx-auto bg-white dark:bg-black bg-opacity-60">
+      <nav className="sticky-nav top-0 z-30 flex justify-between items-center max-w-4xl w-full p-8 my-0 mb-8 mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 firefox:bg-opacity-90 border-primary">
         <a href="#skip" className="sr-only focus:not-sr-only">
           Skip to content
         </a>

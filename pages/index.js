@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Container from '@/components/Container'
 import ProjectCard from '@/components/ProjectCard'
 import ProjectsSection from '@/components/ProjectSections'
+import SeeMore from '@/components/SeeMore'
 
 export default function Home() {
   return (
@@ -21,16 +22,7 @@ export default function Home() {
           enthusiast hub called Traideas.
         </h2>
         <ProjectsSection />
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
-          Recent Works
-        </h3>
-        <ProjectCard
-          title="Tailwind Master Kit"
-          description="Beautiful, Handcrafted, wind web app project."
-          href="https://tailwindmasterkit.com/"
-          icon="tailwindmasterkit"
-          tags={['Tailwind', 'Next.js', 'Freemium']}
-        />
+        <SeeMore />
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Blogs
         </h3>

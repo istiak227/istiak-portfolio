@@ -105,9 +105,9 @@ body {
 
 .token.atrule,
 .token.attr-value,
-.token.keyword {
+/* .token.keyword {
   @apply text-blue-500;
-}
+} */
 
 .token.function,
 .token.class-name {
