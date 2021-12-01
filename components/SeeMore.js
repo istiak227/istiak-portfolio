@@ -5,7 +5,7 @@ const SeeMore = () => {
     <Link href="/projects">
       <a
         type="button"
-        className="flex items-center text-lg my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
+        className="flex items-center text-lg my-4 mb-10 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
       >
         See More
         <svg

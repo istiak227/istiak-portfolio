@@ -6,6 +6,9 @@ import Container from '@/components/Container'
 import ProjectCard from '@/components/ProjectCard'
 import ProjectsSection from '@/components/ProjectSections'
 import SeeMore from '@/components/SeeMore'
+import BlogCard from '@/components/BlogCard'
+import BlogSections from '@/components/BlogSections'
+import ImageSection from '@/components/ImageSection'
 
 export default function Home() {
   return (
@@ -23,12 +26,8 @@ export default function Home() {
         </h2>
         <ProjectsSection />
         <SeeMore />
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
-          Blogs
-        </h3>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
-          World through my lense
-        </h3>
+        <BlogSections />
+        <ImageSection />
       </div>
     </Container>
   )

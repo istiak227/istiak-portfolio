@@ -7,8 +7,8 @@ const ProjectsSection = () => (
       Projects
     </h2>
     <div className="text-primary text-3xl sm:text-5xl lg:text-5xl leading-none font-extrabold tracking-tight mb-4">
-      <p className="mb-2">I like to build things.</p>
-      <p className="mb-8">Here's a few.</p>
+      <p className="mb-2">Some of the recent projects</p>
+      <p className="mb-8">I worked</p>
     </div>
 
     <ul className="grid grid-cols-1 gap-8  mt-12">
