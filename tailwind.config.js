@@ -107,6 +107,9 @@ module.exports = {
     },
   },
   variants: {
+    extends: {
+      animation: ['responsive']
+    },
     typography: ['dark'],
   },
   plugins: [require('@tailwindcss/typography')],

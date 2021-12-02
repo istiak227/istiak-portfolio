@@ -27,6 +27,7 @@ export default function Home() {
         <ProjectsSection />
         <SeeMore />
         <BlogSections />
+        <SeeMore />
         <ImageSection />
       </div>
     </Container>

@@ -3,7 +3,7 @@ import BlogCard from './BlogCard'
 
 const BlogSections = ({ title, summary, slug }) => {
   return (
-    <section className="mb-5">
+    <section>
       <h2 className="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-indigo mb-3">
         Blog
       </h2>

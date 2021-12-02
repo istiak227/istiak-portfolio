@@ -23,11 +23,6 @@ const ProjectsSection = () => (
         description="A fun side-project originally built with Spring Boot and MonogDb,
               rebuilt with with Node.js, Express, Mongoose and MongoDb. Deployed
               with Heroku."
-      /><ProjectCard
-        title="MyRel"
-        description="A fun side-project originally built with Spring Boot and MonogDb,
-              rebuilt with with Node.js, Express, Mongoose and MongoDb. Deployed
-              with Heroku."
       />
     </ul>
   </section>
