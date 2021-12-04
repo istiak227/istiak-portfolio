@@ -1,9 +1,36 @@
 const { spacing, fontFamily } = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
   darkMode: 'class',
   theme: {
+    colors: {
+      white: colors.white,
+      black: colors.black,
+      blueGray: colors.blueGray,
+      coolGray: colors.coolGray,
+      gray: colors.gray,
+      trueGray: colors.trueGray,
+      warmGray: colors.warmGray,
+      red: colors.red,
+      orange: colors.orange,
+      amber: colors.amber,
+      yellow: colors.yellow,
+      lime: colors.lime,
+      green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      sky: colors.sky,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      pink: colors.pink,
+      rose: colors.rose,
+    },
     extend: {
       backgroundColor: {
         primary: 'var(--color-bg-primary)',
@@ -47,20 +74,14 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.emerald.500'),
               '&:hover': {
-                color: theme('colors.blue.700'),
+                color: theme('colors.emerald.600'),
               },
-              code: { color: theme('colors.blue.400') },
             },
-            'h2,h3,h4': {
-              'scroll-margin-top': spacing[32],
-            },
-            code: { color: theme('colors.pink.500') },
-            'blockquote p:first-of-type::before': false,
-            'blockquote p:last-of-type::after': false,
+
+            // ...
           },
         },
         dark: {

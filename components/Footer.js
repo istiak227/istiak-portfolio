@@ -1,11 +1,5 @@
 import Link from 'next/link'
-import {
-  FaTwitter,
-  FaCodepen,
-  FaLinkedin,
-  FaGithub,
-  FaRss,
-} from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa'
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -62,14 +56,14 @@ export default function Footer() {
                   <li>
                     <Link
                       className="text-base text-footer-link hover:text-footer-link-hover"
-                      href="/hrefolbox"
+                      href="/projects"
                     >
-                      hrefolbox
+                      Projects
                     </Link>
                   </li>
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
+              {/* <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-primary tracking-wider uppercase">
                   Extra
                 </h3>
@@ -114,7 +108,7 @@ export default function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8" />
           </div>
@@ -124,14 +118,14 @@ export default function Footer() {
       <div className="mt-2 py-8 px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
         <div className="flex space-x-6 md:order-2">
           <a
-            href="https://twitter.com/BraydonCoyer"
+            href="https://twitter.com/Ist227"
             className="text-footer-icon hover:text-footer-icon-hover"
           >
             <FaTwitter className="h-5 w-5" />
           </a>
 
           <a
-            href="https://github.com/braydoncoyer"
+            href="https://github.com/istiak227"
             className="text-footer-icon hover:text-footer-icon-hover"
           >
             <span className="sr-only">GitHub</span>
@@ -139,27 +133,27 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://codepen.io/braydoncoyer"
+            href="https://discord.com/users/Ezio(Istiak)#6851"
             className="text-footer-icon hover:text-footer-icon-hover"
           >
-            <span className="sr-only">CodePen</span>
-            <FaCodepen className="h-5 w-5" />
+            <span className="sr-only">Discord</span>
+            <FaDiscord className="h-5 w-5" />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/braydon-coyer/"
+            href="https://www.linkedin.com/in/istiak227/"
             className="text-footer-icon hover:text-footer-icon-hover"
           >
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="h-5 w-5" />
           </a>
-          <a
+          {/* <a
             href="https://braydoncoyer.dev/rss.xml"
             className="text-footer-icon hover:text-footer-icon-hover"
           >
             <span className="sr-only">RSS</span>
             <FaRss className="h-5 w-5" />
-          </a>
+          </a> */}
         </div>
         <p className="mt-8 text-base text-footer-icon md:mt-0 md:order-1">
           &copy; {new Date().getFullYear()} Braydon Coyer. All rights reserved.
