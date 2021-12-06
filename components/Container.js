@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import NextLink from 'next/link'
 import { useTheme } from 'next-themes'
+import Footer from './Footer'
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false)
@@ -18,7 +19,7 @@ export default function Container(props) {
     ...customMeta,
   }
   return (
-    <div className="bg-white dark:bg-black">
+    <body className="bg-white dark:bg-black">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -69,26 +70,30 @@ export default function Container(props) {
               Projects
             </a>
           </NextLink>
-          <NextLink href="/blog">
-            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Blog</a>
+          <NextLink href="/journals">
+            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Journals</a>
           </NextLink>
 
-          <NextLink href="/lense">
+          {/* <NextLink href="/lense">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">lense</a>
-          </NextLink>
-          {/*  <NextLink href="/snippets">
-            <a className="p-1 sm:p-4 hidden md:inline text-gray-900 dark:text-gray-100">
-              Snippets
-            </a>
           </NextLink> */}
+           <NextLink href="/about">
+            <a className="p-1 sm:p-4  md:inline text-gray-900 dark:text-gray-100">
+              About
+            </a>
+          </NextLink>
         </div>
       </nav>
-      <main
-        id="skip"
-        className="flex flex-col justify-center bg-white dark:bg-black px-8 text-gray-900 dark:text-gray-100"
-      >
-        {children}
-      </main>
-    </div>
+
+      <div className="min-h-screen px-4 mx-auto max-w-screen-sm md:max-w-2xl flex flex-col">
+        <main
+          id="skip"
+          className="flex-grow bg-white dark:bg-black text-gray-900 dark:text-gray-100"
+        >
+          {children}
+          <Footer />
+        </main>
+      </div>
+    </body>
   )
 }
