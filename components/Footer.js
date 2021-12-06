@@ -99,7 +99,7 @@ export default function Footer() {
 
                   <li>
                     <a
-                      href="https://www.notion.so/Resume-395af92748204ac6a7078cce24132331"
+                      href=""
                       target="_blank"
                       rel="noreferrer"
                       className="text-base text-footer-link hover:text-footer-link-hover"
@@ -148,7 +148,7 @@ export default function Footer() {
             <FaLinkedin className="h-5 w-5" />
           </a>
           {/* <a
-            href="https://braydoncoyer.dev/rss.xml"
+            href=""
             className="text-footer-icon hover:text-footer-icon-hover"
           >
             <span className="sr-only">RSS</span>
@@ -156,7 +156,7 @@ export default function Footer() {
           </a> */}
         </div>
         <p className="mt-8 text-base text-footer-icon md:mt-0 md:order-1">
-          &copy; {new Date().getFullYear()} Braydon Coyer. All rights reserved.
+          &copy; {new Date().getFullYear()} Istiak Ahmed. All rights reserved.
         </p>
       </div>
     </footer>
