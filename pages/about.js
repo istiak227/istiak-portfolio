@@ -1,6 +1,5 @@
 import Container from '@/components/Container'
 import Image from 'next/image'
-import Intro from '@/components/intro'
 import React from 'react'
 import avatar from '../public/avatar.jpg'
 import Link from 'next/link'
@@ -63,7 +62,7 @@ export default function About() {
             I’m currently part of the team at{' '}
             <a
               className="underline text-amber hover:text-amber-hover"
-              href="https://www.cognizant.com/"
+              href="https://www.traideas.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -85,7 +84,7 @@ export default function About() {
             and post hot tech topics on{' '}
             <a
               className="underline  text-amber hover:text-amber-hover"
-              href="https://twitter.com/BraydonCoyer"
+              href="https://www.linkedin.com/in/istiak227/"
               target="_blank"
               rel="noreferrer"
             >

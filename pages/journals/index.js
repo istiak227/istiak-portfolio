@@ -2,6 +2,7 @@ import Container from '@/components/Container'
 import BlogCard from '@/components/BlogCard'
 import React from 'react'
 import { getSortedBlogsData } from '@/lib/journals'
+import Contact from '@/components/Contact'
 
 export async function getStaticProps() {
   const allBlogsData = getSortedBlogsData()
@@ -67,6 +68,7 @@ export default function Journals({ allBlogsData }) {
         </Link>
       </div> */}
       </section>
+      <Contact />
     </Container>
   )
 }
