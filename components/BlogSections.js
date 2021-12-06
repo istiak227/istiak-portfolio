@@ -16,33 +16,6 @@ const BlogSections = ({ title, summary, slug }) => {
         slug="why-cs-graduates-find-programming-hard"
         date="2021-11-15"
       />
-      
-      {/* <div className="mb-10">
-        <Link href="/blogs">
-          <div>
-            <p className="text-xl lg:text-2xl font-extrabold text-primary">
-              Top 5 courses and resources to learn Next JS in 2021
-            </p>
-            <p className="mt-2 text-secondary prose-lg">
-              Get the top 5 resources to learn Next JS in 2021 and take your
-              React skills to the next level."
-            </p>
-          </div>
-        </Link>
-      </div>
-      <div className="mb-10">
-        <Link href="/blogs">
-          <div>
-            <p className="text-xl lg:text-2xl font-extrabold text-primary">
-              Top 5 courses and resources to learn Next JS in 2021
-            </p>
-            <p className="mt-2 text-secondary prose-lg">
-              Get the top 5 resources to learn Next JS in 2021 and take your
-              React skills to the next level."
-            </p>
-          </div>
-        </Link>
-      </div> */}
     </section>
   )
 }
