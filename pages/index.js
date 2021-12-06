@@ -34,7 +34,7 @@ export default function Home() {
       <ProjectsSection />
       <SeeMore route={'projects'} />
       <BlogSections />
-      <SeeMore route={'blog'} />
+      <SeeMore route={'journals'} />
       {/* <ImageSection /> */}
       <Contact />
     </Container>

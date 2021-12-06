@@ -5,21 +5,18 @@ const BlogSections = ({ title, summary, slug }) => {
   return (
     <section>
       <h2 className="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-indigo mb-3">
-        Blog
+        Journals
       </h2>
       <p className="text-primary text-3xl sm:text-5xl lg:text-5xl leading-none font-extrabold tracking-tight mb-10">
-        I write stuff sometimes
+        Sometimes I write my thoughts
       </p>
       <BlogCard
-        title="Top 5 courses and resources to learn Next JS in 2021"
-        summary="Get the top 5 resources to learn Next JS in 2021 and take your React skills to the next level."
-        slug="top-5-nextjs-resources"
+        title="Why CS Graduates find Programming hard?"
+        summary="The strugle to write code of a computer science graduate."
+        slug="why-cs-graduates-find-programming-hard"
+        date="2021-11-15"
       />
-      <BlogCard
-        title="Top 5 courses and resources to learn Next JS in 2021"
-        summary="Get the top 5 resources to learn Next JS in 2021 and take your React skills to the next level."
-        slug="top-5-nextjs-resources"
-      />
+      
       {/* <div className="mb-10">
         <Link href="/blogs">
           <div>

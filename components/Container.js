@@ -70,8 +70,8 @@ export default function Container(props) {
               Projects
             </a>
           </NextLink>
-          <NextLink href="/blog">
-            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Blog</a>
+          <NextLink href="/journals">
+            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Journals</a>
           </NextLink>
 
           {/* <NextLink href="/lense">

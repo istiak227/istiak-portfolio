@@ -28,7 +28,7 @@ export default function About() {
               </h1>
               <p className="text-secondary prose-lg dark:text-gray-200">
                 I'm a senior full stack engineer with a passion for everything.
-                This portfolio is to proof m credibility as a web developer.
+                This portfolio is to proof my credibility as a web developer.
                 It's not much but at least I was able to provide you with a URL.
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function About() {
           </p>
           <p>
             I love programming challenges and solve problems technically. From
-            scratch to MVP I like to
+            scratch to MVP I will be there to build the next startup idea.
           </p>
           <p>
             I specialize in front-end development and make it my mission to
@@ -74,22 +74,22 @@ export default function About() {
             front-end practice in a lab-based working environment.
           </p>
           <p>
-            I always like learning new things. I often write about my findings
+            I always like learning new things. I often write about my thoughts
             on my{' '}
             <Link
               className="underline text-amber hover:text-amber-hover"
               href="/blog"
             >
-              <a>blog,</a>
+              <a>journal,</a>
             </Link>{' '}
-            and post helpful tech-related tidbits on{' '}
+            and post hot tech topics on{' '}
             <a
               className="underline  text-amber hover:text-amber-hover"
               href="https://twitter.com/BraydonCoyer"
               target="_blank"
               rel="noreferrer"
             >
-              Twitter
+              LinkedIn
             </a>
             .
           </p>

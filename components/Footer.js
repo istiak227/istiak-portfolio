@@ -48,9 +48,9 @@ export default function Footer() {
                   <li>
                     <Link
                       className="text-base text-footer-link hover:text-footer-link-hover"
-                      href="/blog"
+                      href="/journals"
                     >
-                      Blog
+                      Journals
                     </Link>
                   </li>
                   <li>
