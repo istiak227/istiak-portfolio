@@ -28,27 +28,27 @@ export default function Projects() {
         <ul className="grid grid-cols-1 gap-8  mt-12">
           <ProjectCard
             title="AI & IoT Bootcamp - 2021"
-            description="This is an event website for AI & IoT virtual Bootcamp 2021. Participants can register andlog in through the website andview the events. They can alsoparticipate in event quizzes andcompete in leader boards."
+            description="This is an event website for AI & IoT virtual Bootcamp 2021. Participants can register andlog in through the website and view the events. They can also participate in event quizzes and compete in leaderboards."
             image={Quantum}
           />
           <ProjectCard
             title="Jusadeals Affiliated Ecommerce"
-            description="JusaDeals is an affiliate and price comparison website for the top eCommerce vendors. This website would compare Amazon, eBay,firstoffer, and Ali’s product via provider API to increase websitetraffic."
+            description="JusaDeals is an affiliate and price comparison website for the top eCommerce vendors. This website would compare Amazon, eBay, firstoffer, and Alibaba’s product via provider API to increase website traffic."
             href="https://www.jusadeals.com/"
           />
           <ProjectCard
             title="MyRel"
-            description="This application is used to educate school children on theimplementation of Solar Energy, This project was developed underthe supervision of UNI10 University Malaysia."
+            description="This application is used to educate school children on the implementation of Solar Energy, This project was developed under the supervision of UNI10 University Malaysia."
             image={MyRel}
           />
           <ProjectCard
             title="Guerilla Security Force"
-            description="This is a business website for a security agency. Used contentfulfor CMS. API integration via restAPI. The website highlightsbusiness information of thebusiness."
+            description="This is a business website for a security agency. Used Strapi for CMS. API integration via REST. The website highlights business information of the agency."
             href="https://guerillaforcebd.com/"
           />
           <ProjectCard
             title="CareerCrew"
-            description="This is a LMS platform specific to IELTS. Students are able topurchase study materials and courses from the website usingonline payment. Verified lecturers can upload courses and studymaterials."
+            description="This is a LMS platform specific to IELTS. Students are able to purchase study materials and courses from the website using online payment Verified lecturers can upload courses and study materials."
             image={CareerCrew}
           />
         </ul>
