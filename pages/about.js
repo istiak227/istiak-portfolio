@@ -36,7 +36,7 @@ export default function About() {
         <div className="absolute bottom-0 left-1/2 text-5xl leading-none text-coolGray-500 dark:text-coolGray-400 " />
       </section>
       <section className="mb-10">
-        <h2 className="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-blue-700 mb-3">
+        <h2 className="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-sky-500 mb-3">
           About Me
         </h2>
         <p className="text-primary text-3xl sm:text-5xl lg:text-5xl leading-none font-extrabold tracking-tight mb-4">
@@ -61,7 +61,7 @@ export default function About() {
           <p>
             I’m currently part of the team at{' '}
             <a
-              className="underline text-amber hover:text-amber-hover"
+              className="underline text-green-600 hover:text-amber-hover"
               href="https://www.traideas.com/"
               target="_blank"
               rel="noreferrer"
@@ -83,7 +83,7 @@ export default function About() {
             </Link>{' '}
             and post hot tech topics on{' '}
             <a
-              className="underline  text-amber hover:text-amber-hover"
+              className="underline  text-amber hover:text-amber-hover text-sky-500"
               href="https://www.linkedin.com/in/istiak227/"
               target="_blank"
               rel="noreferrer"

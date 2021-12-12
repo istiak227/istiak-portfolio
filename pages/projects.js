@@ -1,7 +1,10 @@
+import React from 'react'
 import Contact from '@/components/Contact'
 import Container from '@/components/Container'
 import ProjectCard from '@/components/ProjectCard'
-import React from 'react'
+import MyRel from '../public/MyRel.png'
+import Quantum from '../public/quantum.png'
+import CareerCrew from '../public/careerCrew.png'
 
 export default function Projects() {
   return (
@@ -26,6 +29,7 @@ export default function Projects() {
           <ProjectCard
             title="AI & IoT Bootcamp - 2021"
             description="This is an event website for AI & IoT virtual Bootcamp 2021. Participants can register andlog in through the website andview the events. They can alsoparticipate in event quizzes andcompete in leader boards."
+            image={Quantum}
           />
           <ProjectCard
             title="Jusadeals Affiliated Ecommerce"
@@ -35,12 +39,17 @@ export default function Projects() {
           <ProjectCard
             title="MyRel"
             description="This application is used to educate school children on theimplementation of Solar Energy, This project was developed underthe supervision of UNI10 University Malaysia."
+            image={MyRel}
           />
           <ProjectCard
             title="Guerilla Security Force"
-            description="This is a business website for a
-security agency. Used contentfulfor CMS. API integration via restAPI. The website highlightsbusiness information of thebusiness."
+            description="This is a business website for a security agency. Used contentfulfor CMS. API integration via restAPI. The website highlightsbusiness information of thebusiness."
             href="https://guerillaforcebd.com/"
+          />
+          <ProjectCard
+            title="CareerCrew"
+            description="This is a LMS platform specific to IELTS. Students are able topurchase study materials and courses from the website usingonline payment. Verified lecturers can upload courses and studymaterials."
+            image={CareerCrew}
           />
         </ul>
       </section>
