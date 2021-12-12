@@ -13,14 +13,14 @@ const ProjectsSection = () => (
 
     <ul className="grid grid-cols-1 gap-8  mt-12">
       <ProjectCard
-        title="Guerilla Security Force"
-        description="This is a business website for a security agency. Used contentfulfor CMS. API integration via restAPI. The website highlightsbusiness information of thebusiness."
-        href="https://guerillaforcebd.com/"
+        title="Jusadeals Affiliated Ecommerce"
+        description="JusaDeals is an affiliate and price comparison website for the top eCommerce vendors. This website would compare Amazon, eBay, firstoffer, and Alibaba’s product via provider API to increase website traffic."
+        href="https://www.jusadeals.com/"
       />
       <ProjectCard
-        title="Jusadeals Affiliated Ecommerce"
-        description="JusaDeals is an affiliate and price comparison website for the top eCommerce vendors. This website would compare Amazon, eBay,firstoffer, and Ali’s product via provider API to increase websitetraffic."
-        href="https://www.jusadeals.com/"
+        title="Guerilla Security Force"
+        description="This is a business website for a security agency. Used Strapi for CMS. API integration via REST. The website highlights business information of the agency."
+        href="https://guerillaforcebd.com/"
       />
     </ul>
   </section>
