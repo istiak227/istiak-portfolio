@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 const ProjectsSection = () => (
   <section className="mb-5">
-    <h2 className="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-orange mb-3">
+    <h2 className="sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-purple-600 mb-3">
       Projects
     </h2>
     <div className="text-primary text-3xl sm:text-5xl lg:text-5xl leading-none font-extrabold tracking-tight mb-4">
@@ -13,8 +13,9 @@ const ProjectsSection = () => (
 
     <ul className="grid grid-cols-1 gap-8  mt-12">
       <ProjectCard
-        title="AI & IoT Bootcamp - 2021"
-        description="This is an event website for AI & IoT virtual Bootcamp 2021. Participants can register andlog in through the website andview the events. They can alsoparticipate in event quizzes andcompete in leader boards."
+        title="Guerilla Security Force"
+        description="This is a business website for a security agency. Used contentfulfor CMS. API integration via restAPI. The website highlightsbusiness information of thebusiness."
+        href="https://guerillaforcebd.com/"
       />
       <ProjectCard
         title="Jusadeals Affiliated Ecommerce"
