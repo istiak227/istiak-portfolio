@@ -1,5 +1,5 @@
 const { spacing, fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors');
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
@@ -78,9 +78,10 @@ module.exports = {
               color: theme('colors.emerald.500'),
               '&:hover': {
                 color: theme('colors.emerald.600'),
+                code: { color: theme('colors.gray.700') },
               },
             },
-
+            code: { color: colors.gray },
             // ...
           },
         },
@@ -129,7 +130,7 @@ module.exports = {
   },
   variants: {
     extends: {
-      animation: ['responsive']
+      animation: ['responsive'],
     },
     typography: ['dark'],
   },

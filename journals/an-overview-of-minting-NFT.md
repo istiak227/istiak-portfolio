@@ -1,6 +1,6 @@
 ---
 title: 'An Overview of minting NFT'
-date: '2021-11-15'
+date: '2021-12-16'
 summary: 'An overview of the NFT (Non Fungible Token), How it is made and what libraries should you know to mint a NFT'
 ---
 
@@ -21,7 +21,7 @@ As traditional wallets, it means storing personal belongings of a wallet user. W
 
 There are two keys bound to a wallet or an address node in the block network. A public key for the other wallet users to locate your wallet, a private key to access it. All the standard NFT creating smart contracts must be given a wallet address. Without a wallet you cannot mint/create an NFT. There are several ways of creating a wallet. There are also several types of wallets with same fundamentals such paper wallet, desktop or app wallet, online wallet, hardware wallet and cold storage wallets. Each of them has pros and cons on accessibility and security. To create a wallet, you need to interact to Ethereum network and access its network nodes. Online and hardware wallet services provides the infrastructure to access the Ethereum network and does all the heavy lifting to create and use your wallet. In that case they will charge you for their services. 
 
-To create your own wallet, there is an extensive amount of work and blockchain development knowledge is require. In the later section we will touch some of the technical aspects and frameworks that allows us to interact with the Ethereum network. If you want a efficient wallet service, there are several you can choose from. Coinbase and Metamask are the most popular wallet service for daily transection and use. Also, they are compatible with almost all NFT marketplace, crypto exchanges, and other online services. 
+To create your own wallet, there is an extensive amount of work and blockchain development knowledge is require. In the later section we will touch some of the technical aspects and frameworks that allows us to interact with the Ethereum network. If you want a efficient wallet service, there are several you can choose from. [Coinbase](https://www.coinbase.com/wallet) and [Metamask](https://metamask.io/) are the most popular wallet service for daily transection and use. Also, they are compatible with almost all NFT marketplace, crypto exchanges, and other online services. 
 
 ## Now let's Access the Ethereum Blockchain
 
@@ -29,27 +29,27 @@ To create an NFT, we need a smart contract that can generate NFT’s in the bloc
 
 __Step 1 – Connecting to Ethereum network__
 
-There are a lot of different ways to make request to the Ethereum blockchain. We can download the entire blockchain and run a node from our local device, but that will need a very high configure PC and lots of storage space. To make things easy, we will use Alchemy, a blockchain developer platform and API that will allow us to communicate with the Ethereum node. 
+There are a lot of different ways to make request to the Ethereum blockchain. We can download the entire blockchain and run a node from our local device, but that will need a very high configure PC and lots of storage space. To make things easy, we will use [Alchemy](https://www.alchemy.com/), a blockchain developer platform and API that will allow us to communicate with the Ethereum node. 
 In Alchemy we need to create an app. This app will hold all our smart contract logics. Alchemy also provides, analytics and other information about the app. 
 
 
 __Step 2 – Create an Ethereum wallet account (Address)__
 
-This address is necessary to transfer, hold and receive Eth currency and NFT. The smart contract will take wallet address as values. So, when a NFT is minted, it can send it the receiver’s address. Metamask is the easiest way to create an address. 
-To use real Eth for creating a contract without testing is risky. So, there is a test network called Ropsten fauset. Ropsten network gives you free ETH to test your contract. 
+This address is necessary to transfer, hold and receive Eth currency and NFT. The smart contract will take wallet address as values. So, when a NFT is minted, it can send it the receiver’s address. [Metamask](https://metamask.io/) is the easiest way to create an address. 
+To use real Eth for creating a contract without testing is risky. So, there is a test network called [Ropsten fauset](https://faucet.ropsten.be/). Ropsten network gives you free ETH to test your contract. 
 
 
 __Step 3 – Setting up development environment__
 
 
-We need to install Hardhat, it is a development environment to compile, deploy, test and debug Ethereum software. It helps developers when building smart contracts and dApps locally before deploying to the live chain. There are few several steps to configure the development environment, that can be found on the reference given bellow. It is similar to any Node Js application.
+We need to install [Hardhat](https://hardhat.org/), it is a development environment to compile, deploy, test and debug Ethereum software. It helps developers when building smart contracts and dApps locally before deploying to the live chain. There are few several steps to configure the development environment, that can be found on the reference given bellow. It is similar to any Node Js application.
 
 
 __Step 4 – Write the contract__
 
-As we have our development environment set up locally, we can start writing the logics of our contract. Smart contracts are written in a language called Solidity. There is library called OpenZeppelin, it provides you premade blueprint for dApps and smart contracts. We can find NFT smart contract code from this OpenZeppelin library’s ERC721 implementation.  The library has a lot of useful methods, but the most common method is 
+As we have our development environment set up locally, we can start writing the logics of our contract. Smart contracts are written in a language called Solidity. There is library called OpenZeppelin, it provides you premade blueprint for dApps and smart contracts. We can find NFT smart contract code from this OpenZeppelin library’s [ERC721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) implementation.  The library has a lot of useful methods, but the most common method is 
 
-``mintNFT(address recipient, string memory uri)`` 
+`mintNFT(address recipient, string memory uri)`
     
 The address recipient specifies the address that will receive your freshly minted NFT, and the sting memory uri will hold a JSON document that describes the NFT’s metadata. We will discuss about it in the next section.
 
@@ -75,6 +75,8 @@ In this part we will be interacting with smart contract that is deployed on Ethe
 We would require another library Alchemy web3, to make creating requests to Ethereum blockchain easier. Then create script file which will mint the NFT. We would require an ABI contract; it can be found on the etherscan when we search our token address. 
 
 __Configure metadata for the NFT using IPFS__
+
+
 A metadata is the heart of your NFT. This json format metadata will contain all the description of the NFT whether it’s a video, image or GIF.  A typical NFT metadata looks like this,
 
     {
@@ -89,11 +91,11 @@ A metadata is the heart of your NFT. This json format metadata will contain all 
         }
         ],
         "description": "The world's most adorable and sensitive pup.",
-        "image": "https://gateway.pinata.cloud/ipfs/QmWmvTJmJU3pozR9ZHFmQC2DNDwi2XJtf3QGyYiiagFSW,
+        "image": "https://gateway.pinata.cloud/ipfs/,
         "name": "Ramses"
     }
 
-The image url is the location of your NFT file. Which can be stored into an IPFS. Pinata is decentralized file storing system like IPFS. We also need to store the JSON metadata in Pinata, and Pinata will give us an uri. Which will be the final variable of our mintNFT function. 
+The image url is the location of your NFT file. Which can be stored into an IPFS. [Pinata](https://www.pinata.cloud/) is decentralized file storing system like IPFS. We also need to store the JSON metadata in Pinata, and Pinata will give us an uri. Which will be the final variable of our mintNFT function. 
 
 We need to config the environment file, create an instance in our smart contract and write the transection file. Sign the transection file with your wallets private key and run Node Contract-Interact.js file. 
 Now, running the mint-nft.js script, it will execute the script in the contract and our NFT will be minted. Every time we mint an NFT, we need to pay for Gas with Eth. The Gas amount depends on the script complexity and computation. In that case we are using Ropsten’s free Eth to pay for gas. 
