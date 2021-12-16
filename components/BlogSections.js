@@ -11,6 +11,12 @@ const BlogSections = ({ title, summary, slug }) => {
         Sometimes I write my thoughts
       </p>
       <BlogCard
+        title="An Overview of minting NFT"
+        summary="An overview of the NFT (Non Fungible Token), How it is made and what libraries should you know to mint a NFT'"
+        slug="an-overview-of-minting-NFT"
+        date="2021-12-16"
+      />
+      <BlogCard
         title="Why CS Graduates find Programming hard?"
         summary="The strugle to write code of a computer science graduate."
         slug="why-cs-graduates-find-programming-hard"
